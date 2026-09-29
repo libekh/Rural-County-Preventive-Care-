@@ -1,0 +1,10 @@
+RUCC_2023,Description,Counties,Mean_deficit_score,Pct_1plus,Pct_2plus,Pct_3plus_high_burden,Pct_all_4
+1,Metro - Counties in metro areas of 1 million population or more,415,0.29,18.6,8.7,1.7,0.2
+2,"Metro - Counties in metro areas of 250,000 to 1 million population",360,0.55,32.8,13.1,6.7,2.5
+3,"Metro - Counties in metro areas of fewer than 250,000 population",339,0.67,39.5,18.0,7.1,2.4
+4,"Nonmetro - Urban population of 20,000 or more, adjacent to a metro area",188,0.79,45.7,20.7,9.0,3.2
+5,"Nonmetro - Urban population of 20,000 or more, not adjacent to a metro area",73,1.25,67.1,37.0,16.4,4.1
+6,"Nonmetro - Urban population of 5,000 to 20,000, adjacent to a metro area",353,1.23,58.6,35.4,20.7,8.2
+7,"Nonmetro - Urban population of 5,000 to 20,000, not adjacent to a metro area",229,1.29,65.9,34.5,21.4,7.4
+8,"Nonmetro - Urban population of fewer than 5,000, adjacent to a metro area",437,1.41,68.9,40.3,24.3,7.1
+9,"Nonmetro - Urban population of fewer than 5,000, not adjacent to a metro area",562,1.59,73.0,46.6,27.6,11.9

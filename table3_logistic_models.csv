@@ -1,0 +1,17 @@
+Model,N,Events,Term,OR,CI_low,CI_high,p
+Model 1 (unadjusted),2956,467,Nonmetro,5.5475,4.1411,7.4314,0.0000
+Model 2 (+ SES),2946,466,Nonmetro,2.9317,2.1453,4.0065,0.0000
+Model 2 (+ SES),2946,466,PCTPOVALL_2023,1.0750,1.0507,1.1000,0.0000
+Model 2 (+ SES),2946,466,PCT_BACHELORS_PLUS_2019_23,0.8964,0.8761,0.9172,0.0000
+Model 2 (+ SES),2946,466,Unemployment_rate_2023,1.0853,0.9931,1.1861,0.0709
+Model 3 (+ region),2946,466,Nonmetro,2.7521,1.9816,3.8224,0.0000
+Model 3 (+ region),2946,466,PCTPOVALL_2023,1.0884,1.0597,1.1178,0.0000
+Model 3 (+ region),2946,466,PCT_BACHELORS_PLUS_2019_23,0.8605,0.8382,0.8834,0.0000
+Model 3 (+ region),2946,466,Unemployment_rate_2023,0.9105,0.8253,1.0045,0.0616
+"Model 3 (+ region), Firth",2946,466,Nonmetro,2.7270,1.9802,3.8119,0.0000
+"Model 3 (+ region), Firth",2946,466,PCTPOVALL_2023,1.0879,1.0595,1.1174,0.0000
+"Model 3 (+ region), Firth",2946,466,PCT_BACHELORS_PLUS_2019_23,0.8614,0.8385,0.8836,0.0000
+"Model 3 (+ region), Firth",2946,466,Unemployment_rate_2023,0.9119,0.8255,1.0042,0.0610
+"Model 3 (+ region), Firth",2946,466,Region: Midwest,5.8025,0.8075,737.1172,0.0934
+"Model 3 (+ region), Firth",2946,466,Region: South,8.2432,1.1503,1046.6548,0.0310
+"Model 3 (+ region), Firth",2946,466,Region: West,63.5570,8.9168,8062.7637,0.0000

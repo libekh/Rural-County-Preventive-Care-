@@ -1,0 +1,22 @@
+Analysis,SE,Model,N,Events,OR,CI_low,CI_high,p,Zero_event_regions
+"S1 Primary (4 measures, 25th pct, >=3)",Conventional,Model 1,2956,467,5.5475,4.1411,7.4314,0.0000,
+"S1 Primary (4 measures, 25th pct, >=3)",State-clustered,Model 1,2956,467,5.5475,4.0745,7.5528,0.0000,
+"S1 Primary (4 measures, 25th pct, >=3)",Conventional,Model 2,2946,466,2.9317,2.1453,4.0065,0.0000,
+"S1 Primary (4 measures, 25th pct, >=3)",State-clustered,Model 2,2946,466,2.9317,2.0733,4.1456,0.0000,
+"S1 Primary (4 measures, 25th pct, >=3)",Conventional,Model 3,2946,466,2.7521,1.9816,3.8224,0.0000,Northeast
+"S1 Primary (4 measures, 25th pct, >=3)",State-clustered,Model 3,2946,466,2.7521,1.9797,3.8260,0.0000,Northeast
+"S1 Primary, Northeast excluded",State-clustered,Model 3,2804,466,2.7521,1.9786,3.8281,0.0000,
+"S2 3 measures, no cholesterol, 25th pct, >=2 of 3",State-clustered,Model 1,3143,715,4.0204,2.8676,5.6368,0.0000,
+"S2 3 measures, no cholesterol, 25th pct, >=2 of 3",State-clustered,Model 2,3133,714,1.9823,1.3363,2.9406,0.0007,
+"S2 3 measures, no cholesterol, 25th pct, >=2 of 3",State-clustered,Model 3,3133,714,2.0358,1.5057,2.7525,0.0000,
+"S2 3 measures, no cholesterol, 25th pct, 3 of 3",State-clustered,Model 1,3143,293,5.3531,3.6918,7.7621,0.0000,
+"S2 3 measures, no cholesterol, 25th pct, 3 of 3",State-clustered,Model 2,3133,293,2.2729,1.6630,3.1063,0.0000,
+"S2 3 measures, no cholesterol, 25th pct, 3 of 3",State-clustered,Model 3,3133,293,2.6478,1.9974,3.5100,0.0000,Northeast
+"S3 4 measures, 20th pct, >=3 of 4",State-clustered,Model 1,2956,331,5.9025,3.9202,8.8871,0.0000,
+"S3 4 measures, 20th pct, >=3 of 4",State-clustered,Model 3,2946,330,2.7889,1.9421,4.0048,0.0000,Northeast
+"S3 4 measures, 33th pct, >=3 of 4",State-clustered,Model 1,2956,710,3.9975,2.9405,5.4344,0.0000,
+"S3 4 measures, 33th pct, >=3 of 4",State-clustered,Model 3,2946,709,1.9137,1.4596,2.5093,0.0000,Northeast
+"S3 4 measures, 25th pct, >=2 of 4",State-clustered,Model 1,2956,852,4.2056,3.0873,5.7291,0.0000,
+"S3 4 measures, 25th pct, >=2 of 4",State-clustered,Model 3,2946,851,2.1021,1.5662,2.8214,0.0000,
+"S3 4 measures, 25th pct, >=4 of 4",State-clustered,Model 1,2956,171,5.5157,2.7138,11.2106,0.0000,
+"S3 4 measures, 25th pct, >=4 of 4",State-clustered,Model 3,2946,171,2.0716,1.0464,4.1012,0.0366,Northeast

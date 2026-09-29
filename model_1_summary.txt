@@ -1,0 +1,15 @@
+                               Logit Regression Results                              
+=====================================================================================
+Dep. Variable:     High_Deficit_Burden_3plus   No. Observations:                 2956
+Model:                                 Logit   Df Residuals:                     2954
+Method:                                  MLE   Df Model:                            1
+Date:                       Tue, 29 Sep 2026   Pseudo R-squ.:                 0.07103
+Time:                               07:32:53   Log-Likelihood:                -1198.1
+converged:                              True   LL-Null:                       -1289.7
+Covariance Type:                   nonrobust   LLR p-value:                 9.625e-42
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -2.9577      0.138    -21.387      0.000      -3.229      -2.687
+Nonmetro       1.7133      0.149     11.486      0.000       1.421       2.006
+==============================================================================

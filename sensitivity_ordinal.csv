@@ -1,0 +1,7 @@
+Model,N,OR,CI_low,CI_high,p
+Unadjusted,2946,4.4912,3.8485,5.2412,0.0000
+Adjusted (SES + region),2946,2.1951,1.8313,2.6312,0.0000
+"Binary split: score >= 1 (adjusted, clustered)",2946,2.2661,1.6515,3.1095,0.0000
+"Binary split: score >= 2 (adjusted, clustered)",2946,2.1021,1.5662,2.8214,0.0000
+"Binary split: score >= 3 (adjusted, clustered)",2946,2.7521,1.9797,3.8260,0.0000
+"Binary split: score >= 4 (adjusted, clustered)",2946,2.0716,1.0464,4.1012,0.0366
