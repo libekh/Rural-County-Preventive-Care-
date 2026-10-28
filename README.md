@@ -2,7 +2,15 @@
 
 County-level analytic dataset combining CDC PLACES (2025 release) preventive-care estimates with USDA ERS rurality and socioeconomic data. One row per county or county-equivalent; merged on five-digit FIPS code.
 
-**File:** `county_preventive_rurality_2025.csv` — 3,143 counties × 190 variables
+**File:** `data/county_preventive_rurality_2025.csv` — 3,143 counties × 190 variables
+
+## Repository layout
+
+| Folder | Contents |
+|---|---|
+| `data/` | Analytic dataset (`county_preventive_rurality_2025.csv`) |
+| `scripts/` | `build_dataset.py`, `analysis.py`, `sensitivity.py` |
+| `results/` | Descriptive tables, model summaries, and sensitivity analyses produced by the scripts |
 
 ## Sources
 
@@ -19,10 +27,12 @@ USDA ERS: https://www.ers.usda.gov/data-products/county-level-data-sets
 
 ## Reproducing
 
-1. Download the five source files as CSV into `raw/` (file names are matched by pattern — see the top of `build_dataset.py`).
-2. Run `python build_dataset.py` (requires pandas and numpy).
-3. Run `python analysis.py` (also requires statsmodels and scipy) to reproduce the descriptive tables and logistic regression models in `results/`.
-4. Run `python sensitivity.py` for sensitivity analyses: state-clustered standard errors, a three-measure score without cholesterol screening (retains KY and PA), alternative deficit cutoffs, ordinal logistic regression on the 0–4 score, and rural-urban gradient models.
+The analytic dataset is already in `data/`, so to reproduce the results you can start at step 3. Run the commands from the main repository folder.
+
+1. Download the five source files as CSV into a `raw/` folder in the main repository folder (file names are matched by pattern — see the top of `scripts/build_dataset.py`).
+2. Run `python scripts/build_dataset.py` (requires pandas and numpy). This writes `data/county_preventive_rurality_2025.csv`.
+3. Run `python scripts/analysis.py` (also requires statsmodels and scipy) to reproduce the descriptive tables and logistic regression models in `results/`.
+4. Run `python scripts/sensitivity.py` for sensitivity analyses: state-clustered standard errors, a three-measure score without cholesterol screening (retains KY and PA), alternative deficit cutoffs, ordinal logistic regression on the 0–4 score, and rural-urban gradient models.
 
 PLACES is the base file; each USDA file is left-joined on FIPS, so every PLACES county is kept.
 
