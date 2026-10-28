@@ -1,7 +1,7 @@
 """
 Analysis: rurality and cumulative preventive-care deficit burden in U.S. counties.
 
-Input:  county_preventive_rurality_2025.csv  (built by build_dataset.py)
+Input:  data/county_preventive_rurality_2025.csv  (built by build_dataset.py)
 Output: results/ folder with descriptive tables and logistic regression results.
 """
 import os
@@ -9,11 +9,11 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # main repository folder
 OUT = os.path.join(HERE, "results")
 os.makedirs(OUT, exist_ok=True)
 
-df = pd.read_csv(os.path.join(HERE, "county_preventive_rurality_2025.csv"), dtype={"FIPS": str})
+df = pd.read_csv(os.path.join(HERE, "data", "county_preventive_rurality_2025.csv"), dtype={"FIPS": str})
 
 MEASURES = ["CHOLSCREEN_AdjPrev", "COLON_SCREEN_AdjPrev", "MAMMOUSE_AdjPrev", "DENTAL_AdjPrev"]
 COVARS = ["PCTPOVALL_2023", "PCT_BACHELORS_PLUS_2019_23", "Unemployment_rate_2023", "MEDHHINC_2023"]

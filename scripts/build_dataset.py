@@ -1,7 +1,7 @@
 """
 Build the county-level analytic dataset for the rurality / preventive-care deficit study.
 
-Inputs (place in ./raw/):
+Inputs (place in a raw/ folder in the main repository folder):
   PLACES__County_Data_GIS_Friendly_Format_2025_release.csv   (CDC PLACES, 2025 release)
   Ruralurbancontinuumcodes2023.csv                            (USDA ERS RUCC 2023)
   Poverty2023.csv                                             (USDA ERS poverty estimates, 2023)
@@ -9,15 +9,15 @@ Inputs (place in ./raw/):
   Unemployment2023.csv                                        (USDA ERS unemployment & median HH income, 2000-23)
 
 Output:
-  county_preventive_rurality_2025.csv
+  data/county_preventive_rurality_2025.csv
 """
 import glob
 import os
 import numpy as np
 import pandas as pd
 
-RAW = os.path.join(os.path.dirname(os.path.abspath(__file__)), "raw")
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "county_preventive_rurality_2025.csv")
+RAW = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "raw")
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "county_preventive_rurality_2025.csv")
 
 
 def find(pattern):

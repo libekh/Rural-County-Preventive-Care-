@@ -1,7 +1,7 @@
 """
 Sensitivity and extension analyses for the rurality / preventive-care deficit study.
 
-Input:  county_preventive_rurality_2025.csv  (built by build_dataset.py)
+Input:  data/county_preventive_rurality_2025.csv  (built by build_dataset.py)
 Output: results/sensitivity_*.csv
 
   S1. State-clustered standard errors (Models 1-3)
@@ -18,11 +18,11 @@ import statsmodels.formula.api as smf
 from statsmodels.miscmodels.ordinal_model import OrderedModel
 
 warnings.filterwarnings("ignore")
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # main repository folder
 OUT = os.path.join(HERE, "results")
 os.makedirs(OUT, exist_ok=True)
 
-base = pd.read_csv(os.path.join(HERE, "county_preventive_rurality_2025.csv"), dtype={"FIPS": str})
+base = pd.read_csv(os.path.join(HERE, "data", "county_preventive_rurality_2025.csv"), dtype={"FIPS": str})
 base["Census_Region"] = pd.Categorical(base["Census_Region"], categories=["Northeast", "Midwest", "South", "West"])
 
 ALL4 = ["CHOLSCREEN_AdjPrev", "COLON_SCREEN_AdjPrev", "MAMMOUSE_AdjPrev", "DENTAL_AdjPrev"]
